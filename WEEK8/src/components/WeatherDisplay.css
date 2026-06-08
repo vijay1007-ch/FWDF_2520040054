@@ -1,0 +1,85 @@
+.weather-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  min-height: 250px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.weather-display.loading {
+  color: #38bdf8;
+}
+
+.weather-display.error {
+  color: #f87171;
+  background: rgba(248, 113, 113, 0.1);
+  border: 1px solid rgba(248, 113, 113, 0.2);
+}
+
+.weather-display.empty {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+}
+
+.weather-display h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #f8fafc;
+}
+
+.weather-details {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.weather-card {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  min-width: 150px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.weather-card h3 {
+  font-size: 1rem;
+  color: #94a3b8;
+  margin-bottom: 0.5rem;
+}
+
+.weather-card .value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+.weather-card.wind .value {
+  color: #818cf8;
+}
+
+.time-info {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+/* Spinner */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(56, 189, 248, 0.2);
+  border-top-color: #38bdf8;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
