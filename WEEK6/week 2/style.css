@@ -1,0 +1,54 @@
+body {
+    font-family: Arial;
+    background: #eaf5d8;
+}
+
+.container {
+    width: 70%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 28px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    border: none;
+    background: rgb(126, 109, 30);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(100, 0, 0);
+}
+
+.search-box {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+
+table {
+    width: 100%;
+    background: rgb(195, 216, 154);
+    border-collapse: collapse;
+    color: white;
+}
+
+th {
+    background: rgb(0, 217, 255);
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #dddddd;
+    color: white;
+}
